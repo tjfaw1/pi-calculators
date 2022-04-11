@@ -1,0 +1,39 @@
+<div class="contain">
+  <div class="row justify-content-center">
+    <div class="col-6">
+    <h1>Estimate A Property's Future Growth Story</h1>
+
+    <p>Use this calculator to display the future value of a property based off a hypothetical growth percentage</p>
+    <h4>Here's a Few Tips For the Data You Need to Input</h4>
+    <ul>
+      <li><strong>Value of Property:</strong> Use property listing price from realestate.com.au, Domain's homepriceguide, or our other tool Suburb Data to access the median house price.</li>
+      <li><strong>Annual Growth Rate:</strong> Use our suburb data tool, our growth rate calculator tool to help provide some context, or just pick a number out of the blue for fun</li>
+      <li><strong>Years To Display:</strong> How many results would you like to see displayed?</li>
+
+    </ul>
+    <br>
+
+      <form>
+        <div class="form-group">
+          <label for="propertyValue">Value of Property </label>
+          <input type="number" class="form-control" name="propertyValue" aria-describedby="propertyValue" placeholder="$">
+          <small id="propertyHelp" class="form-text text-muted">eg. 550,000</small>
+        </div>
+        <div class="form-group">
+          <label for="growthRate">Annual Growth Rate </label>
+          <input type="number" step=".1" class="form-control" name="growthRate" placeholder="%">
+          <small id="growthRateHelp" class="form-text text-muted">eg. 5.5%</small>
+        </div>
+        <div class="form-group">
+          <label for="displayYears">Years to Display</label>
+          <input type="number" class="form-control" name="yearsDisplay" aria-describedby="yearsDisplay" placeholder="Years">
+          <small id="propertyHelp" class="form-text text-muted">eg. 10</small>
+        </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </div>
+
+      </form>
+    </div>
+  </div>
+</div>
