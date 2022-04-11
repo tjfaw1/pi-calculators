@@ -1,3 +1,33 @@
 // Place all the styles related to the calculator controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 24px;
+}
+
+p {
+  padding: 16px;
+  text-align: center;
+}
+
+.form-group {
+  padding: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  color: red;
+}

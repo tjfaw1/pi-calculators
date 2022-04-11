@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
 
   get 'past-calculator', to: 'calculator#pastcalculator'
   get 'past-results', to: 'calculator#pastresults'
@@ -10,6 +11,6 @@ Rails.application.routes.draw do
   get 'yield-calculator', to: 'calculator#yieldcalculator'
   get 'yield-results', to: 'calculator#yieldresults'
 
-  get 'suburb-stats', to: 'stats#suburbstats'
-  get 'suburb-results', to: 'stats#suburbresults'
+  # get 'suburb-stats', to: 'stats#suburbstats'
+  # get 'suburb-results', to: 'stats#suburbresults'
 end
