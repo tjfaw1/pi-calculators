@@ -19,7 +19,7 @@ class CalculatorController < ApplicationController
   def futureresults
     @property_value = params[:propertyValue].to_i
     @growth_rate = params[:growthRate].to_i
-    @years_display = params[:yearsToDisplay].to_i
+    @years_display = params[:yearsDisplay].to_i
     @growth_percentage = @growth_rate.to_f / 100
     @growth_amount = @property_value * @growth_percentage
     @growth_int = @growth_percentage + 1

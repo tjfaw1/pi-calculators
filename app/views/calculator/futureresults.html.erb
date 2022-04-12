@@ -1,38 +1,17 @@
-<!--
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-    <h1>Future Value</h1>
-    <br>
-    <h1><strong><%=@average_annual_growth_percentage %>% per annum</strong></h1>
-    <br>
-    <% until @count == @years_display %>
-    <p><%= "#{@current_year} = $#{@property_value.round(0)}" %></p>
-    <br>
-    <% @count += 1 %>
-    <% @current_year += 1 %>
-    <% @property_value *= @growth_int %>
-    <% end %>
-    <br>
-    <p><%= link_to "Run Another Calculation", future_calculator_path %></p>
-    </div>
+ <div class="row justify-content-center">
+  <div class="col-6">
+  <h1>Future Value at <%= @growth_rate %>% Annual Growth</h1>
+  <br>
+  <% until @count == @years_display %>
+  <ul>
+  <li><%= "#{@current_year} = $#{@property_value.round(0).to_s(:delimited)}" %></li>
+  </ul>
+  <% @count += 1 %>
+  <% @current_year += 1 %>
+  <% @property_value *= @growth_int %>
+  <% end %>
+  <p><%= link_to "Run Another Calculation", future_calculator_path %></p>
   </div>
+ </div>
 </div>
--->
-
-<h1>Calculate A Property's Past Growth Rate</h1>
-
-
-<% until @count == @years_display %>
-<%= "#{@current_year} = $#{@property_value.round(0)}" %>
-<br>
-<% @count += 1 %>
-<% @current_year += 1 %>
-<% @property_value *= @growth_int %>
-<% end %>
-
-<br>
-<br>
-<%= link_to "Run Another Calculation", future_calculator_path %>
-<br>
-<br>
