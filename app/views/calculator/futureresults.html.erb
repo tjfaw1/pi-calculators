@@ -1,3 +1,4 @@
+<!--
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-6">
@@ -17,3 +18,21 @@
     </div>
   </div>
 </div>
+-->
+
+<h1>Calculate A Property's Past Growth Rate</h1>
+
+
+<% until @count == @years_display %>
+<%= "#{@current_year} = $#{@property_value.round(0)}" %>
+<br>
+<% @count += 1 %>
+<% @current_year += 1 %>
+<% @property_value *= @growth_int %>
+<% end %>
+
+<br>
+<br>
+<%= link_to "Run Another Calculation", future_calculator_path %>
+<br>
+<br>
