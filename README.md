@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Property Investment Calculators made using Ruby on Rails.
 
-Things you may want to cover:
+There are a number of similar calculators elsewhere online, but when conducting capital growth calculations I always ended up using Microsoft Excel to get exactly what I needed.
 
-* Ruby version
+So halfway through the coding bootcamp at Le Wagon and while I was in the process of purchasing an investment property, I made a few calculators myself.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
