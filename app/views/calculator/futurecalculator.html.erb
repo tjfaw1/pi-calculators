@@ -1,28 +1,30 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-    <h1>Estimate A Property's Future Growth Value</h1>
-  <br>
-    <p>Use this calculator to display the future value of a property based off a hypothetical growth percentage</p>
-      <form action="/future-results">
-        <div class="form-group">
-          <label for="propertyValue">Value of Property </label>
-          <input type="number" class="form-control" name="propertyValue" aria-describedby="propertyValue" placeholder="$">
-        </div>
-        <div class="form-group">
-          <label for="growthRate">Annual Growth Rate </label>
-          <input type="number" step=".1" class="form-control" name="growthRate" placeholder="%">
-        </div>
-        <div class="form-group">
-          <label for="displayYears">Years to Display</label>
-          <input type="number" class="form-control" name="yearsDisplay" aria-describedby="yearsDisplay" placeholder="Years">
-          <small id="propertyHelp" class="form-text text-muted">How many years of results would you like to see displayed?</small>
-        </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
+<div class="future-growth">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-12">
+      <h1>Estimate A Property's Future Growth Value</h1>
+    <br>
+      <p style="font-size: 1.4em;"><strong>Use this calculator to display the future value of a property based off a hypothetical growth percentage</strong></p>
+        <form action="/future-results">
+          <div class="form-group">
+            <label for="propertyValue"><strong>Value of Property </strong></label>
+            <input type="number" class="form-control" name="propertyValue" aria-describedby="propertyValue" placeholder="$">
           </div>
+          <div class="form-group">
+            <label for="growthRate"><strong>Annual Growth Rate</strong></label>
+            <input type="number" step=".1" class="form-control" name="growthRate" placeholder="%">
+          </div>
+          <div class="form-group">
+            <label for="displayYears"><strong>Years to Display</strong></label>
+            <input type="number" class="form-control" name="yearsDisplay" aria-describedby="yearsDisplay" placeholder="Years">
+            <small id="propertyHelp" class="form-text text-muted">How many years of results would you like to see displayed?</small>
+          </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
+            </div>
 
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </div>
