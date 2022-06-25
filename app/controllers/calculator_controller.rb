@@ -8,7 +8,7 @@ class CalculatorController < ApplicationController
     @current_price = params[:currentSalePrice].to_i
     @past_price = params[:lastSalePrice].to_i
     @difference = @current_price - @past_price
-    @growth_total = @difference / @past_price.to_f * 100
+    @growth_total = (@difference.to_f / @past_price) * 100
     @years_difference = Time.new.year - @year
     @average_annual_growth_percentage = (@growth_total / @years_difference).round(2)
   end
