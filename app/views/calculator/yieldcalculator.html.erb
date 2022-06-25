@@ -1,23 +1,24 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-    <h1>Calculate a Property's Rental Yield</h1>
-    <br>
-    <p>Use this calculator to determine the rental yield of property.</p>
-      <form action="/yield-results">
-        <div class="form-group">
-          <label for="weeklyRent">Weekly Rent</label>
-          <input type="number" class="form-control" name="weeklyRent" aria-describedby="weeklyRent" placeholder="$">
-        </div>
-        <div class="form-group">
-          <label for="propertyPrice">Property Price</label>
-          <input type="number" class="form-control" name="propertyPrice" aria-describedby="propertyPrice" placeholder="$">
-          <small id="propertyHelp" class="form-text text-muted">Enter the current value of the property</small>
-        </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
+<div class="yield-first">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-12">
+      <h1 style="padding-bottom: 6px;">Calculate a Property's Rental Yield</h1>
+      <p style="font-size: 1.3em;"><strong>Use this calculator to determine the rental yield of property.</strong></p>
+        <form action="/yield-results">
+          <div class="form-group" style="padding: 0 14px;">
+            <label for="weeklyRent"><strong>Weekly Rent</strong></label>
+            <input type="number" class="form-control" name="weeklyRent" aria-describedby="weeklyRent" placeholder="$">
           </div>
-      </form>
+          <div class="form-group" style="padding: 0 14px;">
+            <label for="propertyPrice"><strong>Property Price</strong></label>
+            <input type="number" class="form-control" name="propertyPrice" aria-describedby="propertyPrice" placeholder="$">
+            <small id="propertyHelp" class="form-text text-muted">Enter the current value of the property</small>
+          </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
+            </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,22 @@
+.yield-first {
+  // border: 3px solid red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.imgur.com/Zmd69Cb.jpg");
+  background-size: cover;
+  background-position: 25%;
+
+  .content {
+    background-color: rgba(255, 255, 255, 0.795);
+    margin: 32px;
+    padding: 24px;
+    width: fit-content;
+    border: 4px solid black;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  }
+}
